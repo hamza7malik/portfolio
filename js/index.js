@@ -5,7 +5,7 @@ function switch_styles(page_style, element_style){
 
 
   if(document.querySelector(".switch_div .toggle").checked == false){
-    document.querySelector(".banner_image").src = "assets/graphics_mode/avatar.png";
+    // document.querySelector(".banner_image").src = "assets/graphics_mode/avatar.png";
     document.querySelector(".page_styles").setAttribute('href', "css/gd_styles.css");
     document.querySelector(".element_styles").setAttribute('href', "css/gd_elements.css");
     document.getElementById("switch_text").innerHTML = "View Basic Mode";
@@ -21,7 +21,7 @@ function switch_styles(page_style, element_style){
 
   }
   else{
-      document.querySelector(".banner_image").src = "assets/dp.png";
+      // document.querySelector(".banner_image").src = "assets/dp.png";
       document.querySelector(".page_styles").setAttribute('href', "css/styles.css");
       document.querySelector(".element_styles").setAttribute('href', "css/elements.css");
       document.getElementById("switch_text").innerHTML = "View Graphics Designers Mode";

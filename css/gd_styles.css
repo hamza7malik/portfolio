@@ -170,19 +170,29 @@ background-color: #dde0e6;
   height: 550px;
 }
 
-.banner_image{
+.banner_image_basic{
   padding-top: 2rem;
   padding-bottom: 3rem;
   text-align: center;
   height: 90%;
   width: 90%;
+  display: none;
+}
 
+.banner_image_gd{
+  margin-top: 2rem;
+  /* padding-top: 2rem; */
+  padding-bottom: 3rem;
+  text-align: center;
+  height: 90%;
+  width: 90%;
 
 }
+
 .banner_img_col{
   text-align: center;
-  margin: auto 0 auto 0;
-  padding: 2rem 0;
+  margin: 8rem 0 auto 0;
+  /* padding: 8rem 0; */
 }
 .buttons_div{
   text-align: center;
