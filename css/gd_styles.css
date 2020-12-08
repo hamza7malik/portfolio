@@ -78,27 +78,27 @@ background-color: #dde0e6;
 
 }
 .description_one{
-  width: 50%;
+  width: 600px;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
 }
 .description_two{
-  width: 50%;
+  width: 600px;
   float: right;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
 }
 .description_three{
-  width: 50%;
+  width: 600px;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
 }
 .desc_p{
 
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 /* -------------------------skill and toole section------------------ */
@@ -198,4 +198,9 @@ background-color: #dde0e6;
   text-align: center;
   margin: 5rem;
 
+}
+
+.footer_email{
+  display: block;
+  font-size: 1.5rem;
 }
