@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>funkaar - Hamza Malik </title>
+
+<head>
+  <meta charset="utf-8">
+  <title>funkaar - Hamza Malik </title>
 
 
-<!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-<!-- fontawesome -->
+  <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/6225bbf9a4.js" crossorigin="anonymous"></script>
 
   <!-- my_styles -->
-      <link class="page_styles" rel="stylesheet" href="css/gd_styles.css">
-      <link class="element_styles" rel="stylesheet" href="css/gd_elements.css">
-      <link rel="stylesheet" href="css/animations.css">
+  <link class="page_styles" rel="stylesheet" href="css/gd_styles.css">
+  <link class="element_styles" rel="stylesheet" href="css/gd_elements.css">
+  <link rel="stylesheet" href="css/animations.css">
 
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet"/>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-});
-</script>
+    });
+  </script>
 
-  </head>
-  <body>
-    <!-- ____________________Navigation Section ____________________ -->
-    <section id="nav_section">
-      <div class="container">
+</head>
+
+<body>
+  <!-- ____________________Navigation Section ____________________ -->
+  <section id="nav_section">
+    <div class="container">
 
 
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -62,211 +64,249 @@ $(document).ready(function(){
         <a class="navbar-brand" href="index.html"><span class="logo">funkaar</span></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-                </li>
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="https://www.behance.net/funkaar" target="_blank">PORTFOLIO</a>
-                </li>
+              <a class="nav-link" href="https://www.behance.net/funkaar" target="_blank">PORTFOLIO</a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link" href="#footer_section">CONTACT</a>
+              <a class="nav-link" href="#about_section">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer_section">CONTACT</a>
             </li>
 
 
-        </ul>
+          </ul>
         </div>
       </nav>
-      </div>
-    </section>
+    </div>
+  </section>
 
 
 
-    <!-- ____________________Banner Section ____________________ -->
-    <section id="banner_section">
+  <!-- ____________________Banner Section ____________________ -->
+  <section id="banner_section">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12   banner_left_col">
-            <div class="banner_left">
-              <h1>Hi, <br>I'm <span class="name">Hamza</span></h1>
-              <p>An Aspiring computer Scientist, Illustrator and a Web Developer</p>
-
-
-                <a href="https://www.fiverr.com/hamza7malik" target=”_blank” class="hireMe">HIRE ME ON FIVERR</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12   banner_left_col">
+          <div class="banner_left">
+            <h1>Hi, <br>I'm <span class="name">Hamza</span></h1>
+            <p>A computer Scientist, Illustrator and a Web Developer</p>
 
 
-
-
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12  banner_img_col">
-
-
-            <img  class="banner_image_gd fade-in bounceIn" src="assets/graphics_mode/avatar.png" alt="Hamza Malik funkaar - Avatar Picture">
-
-          </div>
-        </div>
-      </div>
+            <a href="https://www.fiverr.com/hamza7malik" target=”_blank” class="hireMe">HIRE ME ON FIVERR</a>
 
 
 
-
-
-
-
-
-    </section>
-
-      <!-- ____________________ What I Do Section ____________________ -->
-
-      <section id="whatIDo_section">
-        <div class="container">
-          <div class="section_heading">
-              <h2>What I do</h2>
-            </div>
-          <div class="row">
-
-              <div class="col-lg-12 col-md-12 col-sm-12 desc_col_left">
-                <div class="description_one">
-
-                    <i class="fas fa-laptop-code fa-10x icon_left"></i>
-                    <p class="desc_p">Create beautiful website designs with easy to use interface for a great user experience</p>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 desc_col_right">
-                <div class="description_two">
-
-                    <i class="fas fa-bezier-curve fa-10x icon_right"></i>
-                    <p class="desc_p">Draw eye catching vectors, illustrations for your website.</p>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 align_left desc_col_left">
-                <div class="description_three">
-
-                    <i class="fas fa-code fa-10x icon_left"></i>
-                    <p class="desc_p">Create an effective back-end for your wesite using nodejs, express, and mongoDB.</p>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="buttons_div">
-              <a href="https://www.behance.net/funkaar" target="_blank" class="yellow_buttons" ><i class="far fa-image "></i>  VIEW PORTFOLIO</a>
-
-              <a href="assets/HamzaMalik_Resume.pdf" download target="_blank" class="yellow_buttons"><i class="fas fa-arrow-down"></i>  DOWNLOAD RESUME</a>
-            </div>
 
           </div>
         </div>
 
+        <div class="col-lg-6 col-md-12  banner_img_col">
 
-      </section>
-     <!-- ____________________ Skills Section ____________________ -->
-      <section id="skills_section">
-        <div class="container">
-          <div class="section_heading">
-            <h2>Skills and Tools</h2>
-          </div>
-          <div class="row skills_box">
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-node-js fa-2x tool_icons"></i>
-                <p>NodeJS/Express</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-python fa-2x tool_icons"></i>
-                <p>Python</p>
-              </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fas fa-database fa-2x tool_icons"></i>
-                <p>MongoDB/MySQL</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-css3-alt fa-2x tool_icons"></i>
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-html5 fa-2x tool_icons"></i>
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-bootstrap fa-2x tool_icons"></i>
-                <p>Bootstrap</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-java fa-2x tool_icons"></i>
-                <p>Java</p>
-              </div>
-            </div>
+          <img class="banner_image_gd fade-in bounceIn" src="assets/graphics_mode/avatar.png" alt="Hamza Malik funkaar - Avatar Picture">
 
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <img id="icon_ae" class="tool_icons" src ="assets/graphics_mode/after-effects.svg" alt=" After Effects - icon">
-                <p>After Effects</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <img id="icon_ai" class="tool_icons" src ="assets/graphics_mode/illustrator.svg" alt="Illustrator - icon">
-                <p>Illustrator</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <img id="icon_ps" class="tool_icons" src ="assets/graphics_mode/photoshop.svg" alt="Photoshop - icon">
-                <p>Photoshop</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <img id="icon_sc" class="tool_icons" src ="assets/graphics_mode/web-security.svg" alt="Cyber Secrity - icon">
-                <p>Cyber Security</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-              <div class="skill_item">
-                <img id="icon_wp" class="tool_icons" src ="assets/graphics_mode/wordpress.svg" alt="Wordpress - icon">
-                <p>Wordpress</p>
-              </div>
-            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </section>
+
+  <!-- ____________________ What I Do Section ____________________ -->
+
+  <section id="whatIDo_section">
+    <div class="container">
+      <div class="section_heading">
+        <h2>What I do</h2>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 desc_col_left">
+          <div class="description_one">
+
+            <i class="fas fa-laptop-code fa-10x icon_left"></i>
+            <p class="desc_p">Create beautiful website designs with easy to use interface for a great user experience</p>
           </div>
         </div>
-      </section>
-<!-- ____________________ Footer Section ____________________ -->
-      <section id="footer_section">
-        <div class="footer">
-        <a href="https://www.behance.net/funkaar" target="_blank"><p class="footer_p">Behance</p></a>
-        <a href="https://www.fiverr.com/hamza7malik" target="_blank"><p class="footer_p">Fiverr</p></a>
-        <a href="https://www.linkedin.com/in/hamza-malik-65736614b/" target="_blank"><p class="footer_p">Linkedin</p></a>
-        <p class="footer_p footer_email">crhamza7@gmail.com</p>
+        <div class="col-lg-12 col-md-12 col-sm-12 desc_col_right">
+          <div class="description_two">
+
+            <i class="fas fa-bezier-curve fa-10x icon_right"></i>
+            <p class="desc_p">Draw eye catching vectors and illustrations for your website.</p>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 align_left desc_col_left">
+          <div class="description_three">
+
+            <i class="fas fa-code fa-10x icon_left"></i>
+            <p class="desc_p">Create an effective back-end for your wesite using nodejs, express, and mongoDB.</p>
+          </div>
+        </div>
+
 
       </div>
+      <div class="buttons_div">
+        <a href="https://www.behance.net/funkaar" target="_blank" class="yellow_buttons"><i class="far fa-image "></i> VIEW PORTFOLIO</a>
 
-      <div class="Copyrights">
-        <p class="footer_email">©Copyright 2020 HamzaMalik</p>
+        <a href="assets/HamzaMalik_Resume.pdf" download target="_blank" class="yellow_buttons"><i class="fas fa-arrow-down"></i> DOWNLOAD RESUME</a>
       </div>
 
-      </section>
+    </div>
+    </div>
 
-  </body>
+
+  </section>
+  <!-- ____________________ Skills Section ____________________ -->
+  <section id="skills_section">
+    <div class="container">
+      <div class="section_heading">
+        <h2>Skills and Tools</h2>
+      </div>
+      <div class="row skills_box">
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-node-js fa-2x tool_icons"></i>
+            <p>NodeJS/Express</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-python fa-2x tool_icons"></i>
+            <p>Python</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fas fa-database fa-2x tool_icons"></i>
+            <p>MongoDB/MySQL</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-css3-alt fa-2x tool_icons"></i>
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-html5 fa-2x tool_icons"></i>
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-bootstrap fa-2x tool_icons"></i>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <i class="fab fa-java fa-2x tool_icons"></i>
+            <p>Java</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <img id="icon_ae" class="tool_icons" src="assets/graphics_mode/after-effects.svg" alt=" After Effects - icon">
+            <p>After Effects</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <img id="icon_ai" class="tool_icons" src="assets/graphics_mode/illustrator.svg" alt="Illustrator - icon">
+            <p>Illustrator</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <img id="icon_ps" class="tool_icons" src="assets/graphics_mode/photoshop.svg" alt="Photoshop - icon">
+            <p>Photoshop</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <img id="icon_sc" class="tool_icons" src="assets/graphics_mode/web-security.svg" alt="Cyber Secrity - icon">
+            <p>Cyber Security</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+          <div class="skill_item">
+            <img id="icon_wp" class="tool_icons" src="assets/graphics_mode/wordpress.svg" alt="Wordpress - icon">
+            <p>Wordpress</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about section- -->
+
+  <section id="about_section">
+    <div class="container">
+      <div class="section_heading">
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+
+
+
+          <p>I have been a freelancer for over 6 years now and along this journey I have learned a lot
+            about effective communication, outselling, customer satisfaction, and most importantly,
+            self-learning. Over these years I have served for some reputable names, like
+            <span class="about_strong"><strong>The Daily Degenerate Podcast</strong></span>, <span class="about_strong"><strong>Discover Talking Pen</strong></span> and <span class="about_strong"><strong>Staatslabor</strong></span> with 100%
+            client satisfaction.</p>
+        </div>
+        <div class="col-lg-6">
+            <img class="about_img" src="assets/graphics_mode/avatar_about.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about Section -->
+  <!-- ____________________ Footer Section ____________________ -->
+  <section id="footer_section">
+    <div class="footer">
+      <a href="https://www.behance.net/funkaar" target="_blank">
+        <p class="footer_p">Behance</p>
+      </a>
+      <a href="https://www.fiverr.com/hamza7malik" target="_blank">
+        <p class="footer_p">Fiverr</p>
+      </a>
+      <a href="https://www.linkedin.com/in/hamza-malik-65736614b/" target="_blank">
+        <p class="footer_p">Linkedin</p>
+      </a>
+      <p class="footer_p footer_email">crhamza7@gmail.com</p>
+
+    </div>
+
+    <div class="Copyrights">
+      <p class="footer_email">©Copyright 2020 HamzaMalik</p>
+    </div>
+
+  </section>
+
+</body>
+
 </html>
