@@ -66,6 +66,10 @@ background-color: #dde0e6;
   background-color: #dde0e6;
 }
 
+#about_section{
+  background-color: white;
+}
+
 /* ------------what i do section--------------- */
 .desc_col_left{
   text-align: left;
@@ -78,20 +82,20 @@ background-color: #dde0e6;
 
 }
 .description_one{
-  width: 600px;
+  width: 650px;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
 }
 .description_two{
-  width: 600px;
+  width: 650px;
   float: right;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
 }
 .description_three{
-  width: 600px;
+  width: 650px;
   padding-bottom: 5rem;
   overflow: auto;
   margin: auto 0 auto 0;
@@ -127,13 +131,23 @@ background-color: #dde0e6;
   margin: 1rem;
 
 }
+/* ----------------about---------------- */
+.about_strong{
+  color: #056774;
+}
+.about_img{
+  margin-bottom:  3rem;
+}
 
+
+/* ----------------about---------------- */
 
 /* ----------------footer---------------- */
 #footer_section
 {
   padding-top: 5rem;
   text-align: center;
+  background-color: #dde0e6;
 
 }
 .footer_p
