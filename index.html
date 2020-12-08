@@ -14,14 +14,41 @@
   <script src="https://kit.fontawesome.com/6225bbf9a4.js" crossorigin="anonymous"></script>
 
   <!-- my_styles -->
-      <link class="page_styles" rel="stylesheet" href="css/styles.css">
-      <link class="element_styles" rel="stylesheet" href="css/elements.css">
+      <link class="page_styles" rel="stylesheet" href="css/gd_styles.css">
+      <link class="element_styles" rel="stylesheet" href="css/gd_elements.css">
       <link rel="stylesheet" href="css/animations.css">
 
 <!-- google fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet"/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
   </head>
   <body>
@@ -43,19 +70,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
                 </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="https://www.behance.net/funkaar" target="_blank">PORTFOLIO</a>
                 </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">PORTFOLIO</a>
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#footer_section">CONTACT</a>
             </li>
 
-          <li class="nav-item">
-              <a class="nav-link" href="#">HIRE ME</a>
-          </li>
+
         </ul>
         </div>
       </nav>
@@ -69,26 +92,23 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6  banner_left_col">
+          <div class="col-lg-6 col-md-12   banner_left_col">
             <div class="banner_left">
               <h1>Hi, <br>I'm <span class="name">Hamza</span></h1>
-              <p>A computer Scientist, Illustrator and Full Stack Web Developer</p>
-
-            
-                <a href="bridge.apk" download class="hireMe">HIRE ME ON FIVERR</a>
+              <p>A computer Scientist, Illustrator and a Web Developer</p>
 
 
-              <div class="switch_div">
-                <input type="checkbox" class="toggle" onchange="switch_styles()" checked >
-                <h4 id="switch_text">View Graphics Designers Mode</h4>
-              </div>
+                <a href="https://www.fiverr.com/hamza7malik" target=”_blank” class="hireMe">HIRE ME ON FIVERR</a>
+
+
+
 
             </div>
           </div>
 
-          <div class="col-lg-6 banner_img_col">
+          <div class="col-lg-6 col-md-12  banner_img_col">
 
-            <img  class="banner_image_basic fade-in bounceIn" src="assets/dp.png" alt="Hamza Malik funkaar - Display Picture">
+
             <img  class="banner_image_gd fade-in bounceIn" src="assets/graphics_mode/avatar.png" alt="Hamza Malik funkaar - Avatar Picture">
 
           </div>
@@ -113,34 +133,34 @@
             </div>
           <div class="row">
 
-              <div class="col-lg-12 desc_col_left">
+              <div class="col-lg-12 col-md-12 col-sm-12 desc_col_left">
                 <div class="description_one">
 
                     <i class="fas fa-laptop-code fa-10x icon_left"></i>
-                    <p class="desc_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  </p>
+                    <p class="desc_p">Create beautiful website designs with easy to use interface for a great user experience</p>
                 </div>
               </div>
-              <div class="col-lg-12 desc_col_right">
+              <div class="col-lg-12 col-md-12 col-sm-12 desc_col_right">
                 <div class="description_two">
 
                     <i class="fas fa-bezier-curve fa-10x icon_right"></i>
-                    <p class="desc_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  </p>
+                    <p class="desc_p">Draw eye catching vectors, illustrations for your website.</p>
                 </div>
               </div>
-              <div class="col-lg-12 align_left desc_col_left">
+              <div class="col-lg-12 col-md-12 col-sm-12 align_left desc_col_left">
                 <div class="description_three">
 
                     <i class="fas fa-code fa-10x icon_left"></i>
-                    <p class="desc_p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  </p>
+                    <p class="desc_p">Create an effective back-end for your wesite using nodejs, express, and mongoDB.</p>
                 </div>
               </div>
 
 
             </div>
             <div class="buttons_div">
-              <a href="#" class="yellow_buttons" ><i class="far fa-image "></i>  VIEW PORTFOLIO</a>
+              <a href="https://www.behance.net/funkaar" target="_blank" class="yellow_buttons" ><i class="far fa-image "></i>  VIEW PORTFOLIO</a>
 
-              <a href="#" class="yellow_buttons"><i class="fas fa-arrow-down"></i>  DOWNLOAD RESUME</a>
+              <a href="assets/HamzaMalik_Resume.pdf" download target="_blank" class="yellow_buttons"><i class="fas fa-arrow-down"></i>  DOWNLOAD RESUME</a>
             </div>
 
           </div>
@@ -155,57 +175,77 @@
             <h2>Skills and Tools</h2>
           </div>
           <div class="row skills_box">
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <i class="fab fa-bootstrap fa-2x tool_icons"></i>
-                <p>Bootstrap</p>
+                <i class="fab fa-node-js fa-2x tool_icons"></i>
+                <p>NodeJS/Express</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-css3-alt fa-2x tool_icons"></i>
-                <p>CSS</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
-              <div class="skill_item">
-                <i class="fab fa-html5 fa-2x tool_icons"></i>
-                <p>HTML</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
                 <i class="fab fa-python fa-2x tool_icons"></i>
                 <p>Python</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <img id="icon_ae" class="tool_icons" src ="assets/after-effects.svg" alt=" After Effects - icon">
+                <i class="fas fa-database fa-2x tool_icons"></i>
+                <p>MongoDB/MySQL</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+              <div class="skill_item">
+                <i class="fab fa-css3-alt fa-2x tool_icons"></i>
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+              <div class="skill_item">
+                <i class="fab fa-html5 fa-2x tool_icons"></i>
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+              <div class="skill_item">
+                <i class="fab fa-bootstrap fa-2x tool_icons"></i>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+              <div class="skill_item">
+                <i class="fab fa-java fa-2x tool_icons"></i>
+                <p>Java</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
+              <div class="skill_item">
+                <img id="icon_ae" class="tool_icons" src ="assets/graphics_mode/after-effects.svg" alt=" After Effects - icon">
                 <p>After Effects</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <img id="icon_ai" class="tool_icons" src ="assets/illustrator.svg" alt="Illustrator - icon">
+                <img id="icon_ai" class="tool_icons" src ="assets/graphics_mode/illustrator.svg" alt="Illustrator - icon">
                 <p>Illustrator</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <img id="icon_ps" class="tool_icons" src ="assets/photoshop.svg" alt="Photoshop - icon">
+                <img id="icon_ps" class="tool_icons" src ="assets/graphics_mode/photoshop.svg" alt="Photoshop - icon">
                 <p>Photoshop</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <img id="icon_sc" class="tool_icons" src ="assets/web-security.svg" alt="Cyber Secrity - icon">
-                <p>Cyber Secrity</p>
+                <img id="icon_sc" class="tool_icons" src ="assets/graphics_mode/web-security.svg" alt="Cyber Secrity - icon">
+                <p>Cyber Security</p>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 align_centre">
+            <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
               <div class="skill_item">
-                <img id="icon_wp" class="tool_icons" src ="assets/wordpress.svg" alt="Wordpress - icon">
+                <img id="icon_wp" class="tool_icons" src ="assets/graphics_mode/wordpress.svg" alt="Wordpress - icon">
                 <p>Wordpress</p>
               </div>
             </div>
@@ -215,16 +255,18 @@
 <!-- ____________________ Footer Section ____________________ -->
       <section id="footer_section">
         <div class="footer">
-        <a href="#"><p class="footer_p">Behance</p></a>
-        <a href="#"><p class="footer_p">Fiverr</p></a>
-        <a href="#"><p class="footer_p">Linkedin</p></a>
+        <a href="https://www.behance.net/funkaar" target="_blank"><p class="footer_p">Behance</p></a>
+        <a href="https://www.fiverr.com/hamza7malik" target="_blank"><p class="footer_p">Fiverr</p></a>
+        <a href="https://www.linkedin.com/in/hamza-malik-65736614b/" target="_blank"><p class="footer_p">Linkedin</p></a>
+        <p class="footer_p footer_email">crhamza7@gmail.com</p>
+
       </div>
 
       <div class="Copyrights">
-        <p>© Copyright 2020 HamzaMalik</p>
+        <p class="footer_email">©Copyright 2020 HamzaMalik</p>
       </div>
 
       </section>
-    <script src="js/index.js" charset="utf-8"></script>
+
   </body>
 </html>
