@@ -69,6 +69,9 @@ background-color: #dde0e6;
 #about_section{
   background-color: white;
 }
+#testimonial_section{
+  background-color: #dde0e6;
+}
 
 /* ------------what i do section--------------- */
 .desc_col_left{
@@ -126,8 +129,8 @@ background-color: #dde0e6;
 }
 .tool_icons{
   color: #056774;
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
   margin: 1rem;
 
 }
@@ -141,13 +144,57 @@ background-color: #dde0e6;
 
 
 /* ----------------about---------------- */
+/* ----------Testimonial--------------- */
 
+.testimonial_box{
+  text-align: center;
+  margin-bottom: 13rem;
+}
+.p_username{
+  color: #056774;
+
+}
+.p_testimonial{
+  text-align: center;
+  margin: 2rem auto 5rem;
+}
+.semicolon{
+  font-size: 2rem;
+  margin: auto 1rem;
+  color: #056774;
+}
+.star_icon{
+  /* color: #056774; */
+  color: #f8a903;
+}
+
+/* -----------carosel------------ */
+
+
+.carousel-indicators .active{
+      background-color:  #056774;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next{
+      height: 50px;
+      width: 50px;
+      outline: $color-white;
+      background-size: 100%, 100%;
+      border-radius: 50%;
+      border: 1px solid #056774;;
+      background-color: #056774;;
+  }
+
+
+
+/* ----------Testimonial--------------- */
 /* ----------------footer---------------- */
 #footer_section
 {
   padding-top: 5rem;
   text-align: center;
-  background-color: #dde0e6;
+  background-color: white;
 
 }
 .footer_p
