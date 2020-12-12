@@ -58,6 +58,11 @@ background-color: #dde0e6;
 }
 .section_heading{
   padding: 5rem 0;
+  text-align: center;
+}
+.section_heading-left{
+  padding: 5rem 0;
+  
 }
 #skills_section{
   background-color: #dde0e6;
@@ -71,7 +76,7 @@ background-color: #dde0e6;
 }
 #testimonial_section{
   background-color: #dde0e6;
-  height: 50rem;
+  height: 43rem;
 }
 
 /* ------------what i do section--------------- */
