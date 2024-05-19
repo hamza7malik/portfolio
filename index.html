@@ -15,14 +15,15 @@
   <script src="https://kit.fontawesome.com/6225bbf9a4.js" crossorigin="anonymous"></script>
 
   <!-- my_styles -->
-  <link class="page_styles" rel="stylesheet" href="css/gd_styles.css">
-  <link class="element_styles" rel="stylesheet" href="css/gd_elements.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <link class="page_styles" rel="stylesheet" href="css/style.css">
+
+  <!-- --swiper-- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Genos:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -51,7 +52,7 @@
     });
   </script>
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="assets/graphics_mode/favicon4.png">
+  <link rel="icon" type="image/png" href="assets/favicon4.png">
   <!-- favicon -->
 </head>
 
@@ -76,7 +77,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="https://www.behance.net/funkaar" target="_blank">PORTFOLIO</a>
+              <a class="nav-link" href="#portfolio_section" target="_blank">PORTFOLIO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about_section">ABOUT</a>
@@ -86,6 +87,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#footer_section">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cta" href="#footer_section">Download CV</a>
             </li>
 
 
@@ -102,24 +106,24 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-12   banner_left_col">
+        <div class="col-lg-8 col-md-12   banner_left_col">
           <div class="banner_left">
-            <h1>Hi, <br>I'm <span class="name">Hamza</span></h1>
-            <p>An Aspiring computer Scientist, Illustrator and a Web Developer</p>
-
-
-            <a href="https://www.fiverr.com/hamza7malik" target=”_blank” class="hireMe">HIRE ME ON FIVERR</a>
-
-
+            <h1>HI! I'M HAMZA</h1>
+            <h1><span class="name">MERN STACK,</span> WEB & MOBILE APP DEVELOPER</h1>
+            <p>🚀 Passionate MERN Stack Developer | UAE 🇦🇪 | Let's Build Together!
+            <br>
+            <br>
+            With a strong foundation in web and mobile development and a flair for creativity, I'm dedicated to elevating user experiences through innovative solutions. From crafting sleek websites to developing engaging mobile apps, I thrive on turning ideas into reality and making technology fun and accessible.
+          </p>
 
 
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-12  banner_img_col">
+        <div class="col-lg-4 col-md-12  banner_img_col">
 
 
-          <img class="banner_image_gd fade-in bounceIn" src="assets/graphics_mode/avatar.png" alt="Hamza Malik funkaar - Avatar Picture">
+          <img class="banner_image_gd fade-in bounceIn" src="assets/avatar_3.png" alt="Hamza Malik funkaar - Avatar Picture">
 
         </div>
       </div>
@@ -134,44 +138,107 @@
 
   </section>
 
-  <!-- ____________________ What I Do Section ____________________ -->
+  <!-- ____________________ Portfolio Section ____________________ -->
 
-  <section id="whatIDo_section">
+  <section id="portfolio_section">
     <div class="container">
       <div class="section_heading">
-        <h2>What I do</h2>
+        <h2>MY RECENT PROJECTS</h2>
       </div>
-      <div class="row">
 
-        <div class="col-lg-12 col-md-12 col-sm-12 desc_col_left">
-          <div class="description_one">
 
-            <i class="fas fa-laptop-code fa-10x icon_left"></i>
-            <p class="desc_p">Create beautiful website designs with easy to use interface for a great user experience</p>
+      <div class="portfolio-container container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/1.png" alt="">
+                <div>
+                  <p class="head">ATSS - website</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">REACT JS/NUXT JS</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/2.webp" alt="">
+                <div>
+                  <p class="head">Wisoft Solutions - website</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">VUE JS/NUXT JS</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/3.png" alt="">
+                <div>
+                  <p class="head">Checkitup - Mobile App</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">REACT NATIVE, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/4.svg" alt="">
+                <div>
+                  <p class="head">Jagahonline - website</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">REACT JS, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/5.webp" alt="">
+                <div>
+                  <p class="head">Heights Papers - Mobile App</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">REACT Native, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/6.png" alt="">
+                <div>
+                  <p class="head">Hana Waters - Mobile App</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">REACT Native, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/7.png" alt="">
+                <div>
+                  <p class="head">Green Tree - Website & Mobile App</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">React JS, REACT Native, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="portfolio-card">
+                <img src="/assets/portfolio/8.svg" alt="">
+                <div>
+                  <p class="head">UpGrad - Website</p>
+                  <p class="tech">technology:</p>
+                  <p class="tech-list">React JS, NODE JS/EXPRESS, MONGO DB</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Add more slides as needed -->
           </div>
+          <!-- If you need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 desc_col_right">
-          <div class="description_two">
-
-            <i class="fas fa-bezier-curve fa-10x icon_right"></i>
-            <p class="desc_p">Draw eye catching vectors and illustrations for your website.</p>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 align_left desc_col_left">
-          <div class="description_three">
-
-            <i class="fas fa-code fa-10x icon_left"></i>
-            <p class="desc_p">Create an effective back-end for your wesite using nodejs, express, and mongoDB.</p>
-          </div>
-        </div>
-
-
+    
       </div>
-      <div class="buttons_div">
-        <a href="https://www.behance.net/funkaar" target="_blank" class="yellow_buttons"><i class="far fa-image "></i> VIEW PORTFOLIO</a>
-
-        <a href="assets/HamzaMalik_Resume.pdf" download target="_blank" class="yellow_buttons"><i class="fas fa-arrow-down"></i> DOWNLOAD RESUME</a>
-      </div>
+    
 
     </div>
     </div>
@@ -179,89 +246,7 @@
 
   </section>
   <!-- ____________________ Skills Section ____________________ -->
-  <section id="skills_section">
-    <div class="container">
-      <div class="section_heading">
-        <h2>Skills and Tools</h2>
-      </div>
-      <div class="row skills_box">
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-node-js fa-4x tool_icons"></i>
-            <p>NodeJS/Express</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-python fa-4x tool_icons"></i>
-            <p>Python</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fas fa-database fa-4x tool_icons"></i>
-            <p>MongoDB/MySQL</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-css3-alt fa-4x tool_icons"></i>
-            <p>CSS</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-html5 fa-4x tool_icons"></i>
-            <p>HTML</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-bootstrap fa-4x tool_icons"></i>
-            <p>Bootstrap</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <i class="fab fa-java fa-4x tool_icons"></i>
-            <p>Java</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <img id="icon_ae" class="tool_icons" src="assets/graphics_mode/after-effects.svg" alt=" After Effects - icon">
-            <p>After Effects</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <img id="icon_ai" class="tool_icons" src="assets/graphics_mode/illustrator.svg" alt="Illustrator - icon">
-            <p>Illustrator</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <img id="icon_ps" class="tool_icons" src="assets/graphics_mode/photoshop.svg" alt="Photoshop - icon">
-            <p>Photoshop</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <img id="icon_sc" class="tool_icons" src="assets/graphics_mode/web-security.svg" alt="Cyber Secrity - icon">
-            <p>Cyber Security</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 align_centre">
-          <div class="skill_item">
-            <img id="icon_wp" class="tool_icons" src="assets/graphics_mode/wordpress.svg" alt="Wordpress - icon">
-            <p>Wordpress</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
 
   <!-- about section- -->
@@ -269,170 +254,99 @@
   <section id="about_section">
     <div class="container">
       <div class="section_heading-left">
-        <h2>About</h2>
+        <h2>About Me</h2>
       </div>
 
 
       <div class="row">
-        <div class="col-lg-6">
-          <p>I have been a freelancer for over 6 years now and along this journey I have learned a lot
+        <div class="col-lg-5">
+          <img class="about_img" src="assets/avatar_about_2.png" alt="">
+        </div>
+        <div class="col-lg-7">
+          <p>
+            Hey there! I'm a passionate MERN Stack Developer based in the UAE. With a 
+            strong foundation in web/mobile development and a flair for creativity, I'm 
+            dedicated to elevating user experiences through innovative solutions.
+            <br><br>
+            I've had the privilege to work on a spectrum of projects, harnessing technologies
+            like React.js, React Native, Vue.js, Node.js/Express, Next.js, Nuxt.js & Mongo DB. 
+            This diverse exposure has sharpened my skills in solving complex problems and delivering 
+            visually stunning applications.
+            <br><br>
+            But hey, it's not just about the tech—I thrive on challenges and love fostering a 
+            collaborative team environment. Let's connect and explore how we can bring remarkable 
+            ideas to life together! 
+            <!-- I have been a freelancer for over 6 years now and along this journey I have learned a lot
             about effective communication, outselling, customer satisfaction, and most importantly,
             self-learning. Over these years I have served for some reputable names, like
             <span class="about_strong"><strong>The Daily Degenerate Podcast</strong></span>, <span class="about_strong"><strong>Discover Talking Pen</strong></span> and <span class="about_strong"><strong>Staatslabor</strong></span> with 100%
-            client satisfaction.
+            client satisfaction. -->
           </p>
+          <div class="row">
+            <div class="row skills_box">
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <p>REACT / NEXT</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <p>REACT NATIVE</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:70;"></div>
+                  <p>NODE / EXPRESS</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:60;"></div>
+                  <p>MONGO DB</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:80;"></div>
+                  <p>VUE / NUXT</p>
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
+                <div class="skill_item">
+                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <p>JAVASCRIPT</p>
+                </div>
+              </div>
+      
+              
+            </div>
+          </div>
         </div>
-        <div class="col-lg-6">
-          <img class="about_img" src="assets/graphics_mode/avatar_about.png" alt="">
-        </div>
+       
       </div>
+    
 
     </div>
   </section>
 
   <!-- about Section -->
 
-  <!-- testimonial_section- -->
 
-  <section id="testimonial_section">
-    <div class="container">
-      <div class="section_heading">
-        <!-- <h2>Testimonial</h2> -->
-      </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-              <div class="carousel-inner">
-                <!-- 0th Item -->
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="testimonial_box">
-                        <p class="p_username"><strong>ckendall2017</strong></p>
-                        <div class="star_box">
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                        </div>
-                        <p class="p_testimonial"> <span class="semicolon"><strong>"</strong></span> Hamza exceeded expectations! Not only did our figure turn out great,
-                          but the scenes he came up with were fun and absolutely nailed our concepts! Fantastic job !<span class="semicolon"><strong>"</strong></span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 1st item -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="testimonial_box">
-                        <p class="p_username"><strong>alicja166</strong></p>
-                        <div class="star_box">
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                        </div>
-                        <p class="p_testimonial"> <span class="semicolon"><strong>"</strong></span>Sleek service, very creative and exactly what I wanted! Professional service with great communication.!<span class="semicolon"><strong>"</strong></span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 2nd item -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="testimonial_box">
-                        <p class="p_username"><strong>henmoat</strong></p>
-                        <div class="star_box">
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                        </div>
-                        <p class="p_testimonial"> <span class="semicolon"><strong>"</strong></span>The best! Super responsive and quick turnaround time! Delievered exactly
-                           what I was looking for. Will definitely come back for more work!!<span class="semicolon"><strong>"</strong></span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 3rd item -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="testimonial_box">
-                        <p class="p_username"><strong>gary_noteworth</strong></p>
-                        <div class="star_box">
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                        </div>
-                        <p class="p_testimonial"> <span class="semicolon"><strong>"</strong></span>Hamza helped create flat illustration vectors for our website. He was very
-                           responsive and easy to work with. He was able to take our high level concepts and bring them to life.<span class="semicolon"><strong>"</strong></span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 4th item -->
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="testimonial_box">
-                        <p class="p_username"><strong>pieterjanmeu952</strong></p>
-                        <div class="star_box">
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                          <i class="fas fa-star fa-2x inline star_icon"></i>
-                        </div>
-                        <p class="p_testimonial"> <span class="semicolon"><strong>"</strong></span>He gave me the perfect picture for my website in a
-                          record breaking time. Thanks!<span class="semicolon"><strong>"</strong></span></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
-
-              </ol>
-            </div>
-
-
-
-    </div>
-  </section>
-
-  <!-- testimonial_section -->
 
 
   <!-- ____________________ Footer Section ____________________ -->
   <section id="footer_section">
     <div class="footer">
-      <a href="https://www.behance.net/funkaar" target="_blank">
+      <!-- <a href="https://www.behance.net/funkaar" target="_blank">
         <p class="footer_p">Behance</p>
-      </a>
-      <a href="https://www.fiverr.com/hamza7malik" target="_blank">
+      </a> -->
+      <!-- <a href="https://www.fiverr.com/hamza7malik" target="_blank">
         <p class="footer_p">Fiverr</p>
-      </a>
+      </a> -->
       <a href="https://www.linkedin.com/in/hamza-malik-65736614b/" target="_blank">
         <p class="footer_p">Linkedin</p>
       </a>
@@ -441,11 +355,43 @@
     </div>
 
     <div class="Copyrights">
-      <p class="footer_email">©Copyright 2020 HamzaMalik</p>
+      <p class="footer_email">©Copyright 2020 Hamza Malik</p>
     </div>
 
   </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 'auto', // Adjusts slides based on container width
+      spaceBetween: 20, // Adds space between slides
+      autoplay: {
+        delay: 2000, // Delay between slides in milliseconds
+        disableOnInteraction: false, // Autoplay continues even when user interacts with slider
+      },
+      // If you need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        // When window width is >= 768px (bigger screens)
+        320: {
+        slidesPerView: 1,
+        },
 
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        996: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+    });
+  </script>
 </body>
 
 </html>
