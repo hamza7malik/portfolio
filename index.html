@@ -20,6 +20,9 @@
   <!-- --swiper-- -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+  <!-- --aos-- -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +92,7 @@
               <a class="nav-link" href="#footer_section">CONTACT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link cta" href="#footer_section">Download CV</a>
+              <a class="nav-link cta" href="/assets/Hamza_Malik_MERN_Stack_Developer.pdf" download="Hamza_Malik_MERN_Stack_Developer.pdf">Download CV</a>
             </li>
 
 
@@ -123,7 +126,7 @@
         <div class="col-lg-4 col-md-12  banner_img_col">
 
 
-          <img class="banner_image_gd fade-in bounceIn" src="assets/avatar_3.png" alt="Hamza Malik funkaar - Avatar Picture">
+          <img class="banner_image_gd" src="assets/avatar_3.webp" alt="Hamza Malik funkaar - Avatar Picture">
 
         </div>
       </div>
@@ -153,7 +156,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="portfolio-card">
-                <img src="/assets/portfolio/1.png" alt="">
+                <img src="/assets/portfolio/1.webp" alt="">
                 <div>
                   <p class="head">ATSS - website</p>
                   <p class="tech">technology:</p>
@@ -173,7 +176,7 @@
             </div>
             <div class="swiper-slide">
               <div class="portfolio-card">
-                <img src="/assets/portfolio/3.png" alt="">
+                <img src="/assets/portfolio/3.webp" alt="">
                 <div>
                   <p class="head">Checkitup - Mobile App</p>
                   <p class="tech">technology:</p>
@@ -203,7 +206,7 @@
             </div>
             <div class="swiper-slide">
               <div class="portfolio-card">
-                <img src="/assets/portfolio/6.png" alt="">
+                <img src="/assets/portfolio/6.webp" alt="">
                 <div>
                   <p class="head">Hana Waters - Mobile App</p>
                   <p class="tech">technology:</p>
@@ -213,7 +216,7 @@
             </div>
             <div class="swiper-slide">
               <div class="portfolio-card">
-                <img src="/assets/portfolio/7.png" alt="">
+                <img src="/assets/portfolio/7.webp" alt="">
                 <div>
                   <p class="head">Green Tree - Website & Mobile App</p>
                   <p class="tech">technology:</p>
@@ -261,9 +264,9 @@
 
       <div class="row">
         <div class="col-lg-5">
-          <img class="about_img" src="assets/avatar_about_2.png" alt="">
+          <img class="about_img" src="assets/avatar_about_2.webp" data-aos="zoom-in-right" alt="">
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7" data-aos="zoom-in-left">
           <p>About Me</p>
           <h2>About Me & My Tech Stack</h2>
           <p>
@@ -289,38 +292,38 @@
             <div class="row skills_box">
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:90;"></div>
                   <p>REACT / NEXT</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:90;"></div>
                   <p>REACT NATIVE</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:80;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:80;"></div>
                   <p>NODE / EXPRESS</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:75;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:75;"></div>
                   <p>MONGO DB</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:80;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:80;"></div>
                   <p>VUE / NUXT</p>
                 </div>
               </div>
               
               <div class="col-lg-4 col-md-6 col-sm-12 align_centre">
                 <div class="skill_item">
-                  <div class="pie animate no-round" style="--p:90;"></div>
+                  <div class="pie animate no-round" data-aos="flip-up" style="--p:90;"></div>
                   <p>JAVASCRIPT</p>
                 </div>
               </div>
@@ -395,6 +398,10 @@
       }
     });
   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+</script>
 </body>
 
 </html>
