@@ -409,7 +409,7 @@ h1{
     /* width: 25rem; */
     padding-bottom: 5rem;
     /* margin-left: 5rem; */
-    padding-top: 9rem;
+    padding-top: 8rem;
   
   
   }
@@ -438,8 +438,8 @@ h1{
   
   .banner_img_col{
     text-align: center;
-    margin: 3rem 0 auto 0;
-    padding:0;
+    margin: 5rem 0 auto 0;
+    /* padding: 8rem 0; */
   }
   .buttons_div{
     text-align: center;
