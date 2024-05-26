@@ -88,6 +88,13 @@ h1{
     color: var(--text-color) !important;
  
   }
+  .skill-list-container .skill-list-item{
+    background-color: var(--accent-color);
+    padding: 8px 14px;
+    color: var(--text-color);
+    font-weight: 400;
+    border-radius: 8px;
+  }
   .navbar-brand{
     font-family: "Genos", sans-serif;
     font-weight: 800;
