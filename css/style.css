@@ -4,7 +4,8 @@
     --secondary-color: #191919;  /* Green */
     --accent-color: #88CE52;     /* Red */
     --background-color: #f4f4f4; /* Light Gray */
-    --text-color: #f4f4f4;       /* Dark Gray */
+    --text-color: #f4f4f4;  
+    --disabled-dark: #767676;      /* Dark Gray */
     --p: 0;
     --b: 12px;
     --c: var(--accent-color);
@@ -56,7 +57,7 @@ h1{
     font-size: 1.2rem;
   }
   .navbar-light .navbar-nav .nav-link:focus{
-    color: var(--accent-color) !important;
+    color: var(--background-color) !important;
   }
   .navbar-light .navbar-nav .nav-link:hover{
     color: var(--accent-color);
@@ -94,6 +95,13 @@ h1{
     color: var(--text-color);
     font-weight: 400;
     border-radius: 8px;
+    
+  }
+  .skill-list-item.semi-colon{
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    font-weight: 600;
+  
   }
   .navbar-brand{
     font-family: "Genos", sans-serif;
@@ -140,6 +148,13 @@ h1{
   .swiper-slide{
     height: auto !important;
     cursor: pointer;
+  }
+  .swiper-button-next, .swiper-button-prev{
+    color: var(--disabled-dark) !important;
+    transform: scale(0.8);
+  }
+  .swiper-navigation-container{
+    padding: 0 50px;
   }
   .portfolio-container{
     overflow: hidden;
@@ -394,7 +409,7 @@ h1{
     /* width: 25rem; */
     padding-bottom: 5rem;
     /* margin-left: 5rem; */
-    padding-top: 12rem;
+    padding-top: 9rem;
   
   
   }
@@ -423,8 +438,8 @@ h1{
   
   .banner_img_col{
     text-align: center;
-    margin: 8rem 0 auto 0;
-    /* padding: 8rem 0; */
+    margin: 3rem 0 auto 0;
+    padding:0;
   }
   .buttons_div{
     text-align: center;
